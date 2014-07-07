@@ -83,13 +83,11 @@ require('bugpack').context("*", function(bugpack) {
         /**
          * @protected
          */
-        preProcessApplication: function() {
-            this.getConfigurationTagScan().scanBugpacks([
-                "routebugserver.RoutebugServerConfiguration"
-            ]);
+        preConfigureApplication: function() {
             this.entityManagerTagScan.scanAll();
             this.getModuleTagScan().scanAll({
                 excludes: [
+                    "bugmigrate.MigrationConfiguration",
                     "bugmigrate.MigrationInitializer",
                     "bugmigrate.MigrationManager"
                 ]
