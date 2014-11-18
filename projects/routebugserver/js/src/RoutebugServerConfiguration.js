@@ -19,8 +19,8 @@
 //@Require('Obj')
 //@Require('routebugserver.RoutebugServerConfig')
 //@Require('routebugserver.SessionServiceConfig')
-//@Require('aws.AwsConfig')
-//@Require('aws.AwsUploader')
+//@Require('bugaws.AwsConfig')
+//@Require('bugaws.AwsUploader')
 //@Require('bugioc.ArgTag')
 //@Require('bugioc.ConfigurationTag')
 //@Require('bugioc.ModuleTag')
@@ -69,8 +69,8 @@ require('bugpack').context("*", function(bugpack) {
     var AirbugServerConfig              = bugpack.require('airbugserver.AirbugServerConfig');
     var GithubApi                       = bugpack.require('routebugserver.GithubApi');
     var SessionServiceConfig            = bugpack.require('routebugserver.SessionServiceConfig');
-    var AwsConfig                       = bugpack.require('aws.AwsConfig');
-    var AwsUploader                     = bugpack.require('aws.AwsUploader');
+    var AwsConfig                       = bugpack.require('bugaws.AwsConfig');
+    var AwsUploader                     = bugpack.require('bugaws.AwsUploader');
     var ArgTag                   = bugpack.require('bugioc.ArgTag');
     var ConfigurationTag         = bugpack.require('bugioc.ConfigurationTag');
     var ModuleTag                = bugpack.require('bugioc.ModuleTag');
