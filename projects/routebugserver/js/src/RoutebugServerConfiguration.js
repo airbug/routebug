@@ -30,7 +30,7 @@
 //@Require('bugmeta.BugMeta')
 //@Require('express.ExpressApp')
 //@Require('express.ExpressServer')
-//@Require('mongo.MongoDataStore')
+//@Require('bugmongo.MongoDataStore')
 //@Require('socketio.SocketIoManager')
 //@Require('socketio.SocketIoServer')
 //@Require('socketio.SocketIoServerConfig')
